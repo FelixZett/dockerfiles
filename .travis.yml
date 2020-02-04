@@ -3,6 +3,6 @@ services:
 
 script:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - chmod +x ./buildall.sh
+  - find . -type f -iname "*.sh" -exec chmod +x {} \;
   - ./buildall.sh
   - docker logout
