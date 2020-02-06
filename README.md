@@ -5,14 +5,14 @@ This repository contains my public dockerfiles and scripts to automatically buil
 
 # Hugo
 These dockerfiles are for [Hugo Static Site Generator](https://gohugo.io). I use them for building my website with gitlab-runners.
-The images include git so that you can use git-info in your hugo builds.
+The images include git so that you can use git-info in your hugo builds. I also included npm to be able to fetch assets from the node repository and include them in my build.
 
 ## Hugo
 ![Docker Pulls](https://img.shields.io/docker/pulls/felixzett/hugo)
 
-Hugo standard version
+Hugo standard version including git and npm
 
 ## Hugo Extended
 ![Docker Pulls](https://img.shields.io/docker/pulls/felixzett/hugo-extended)
 
-Hugo extended version
+Hugo extended version including git and npm

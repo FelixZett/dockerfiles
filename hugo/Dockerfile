@@ -2,7 +2,8 @@ FROM alpine:latest
 
 RUN apk add --no-cache \
     curl \
-    git
+    git \
+    npm
 
 ENV VERSION 0.64.0
 RUN mkdir -p /usr/local/src \
