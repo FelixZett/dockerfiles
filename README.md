@@ -1,5 +1,6 @@
-[![Build Status](https://travis-ci.com/FelixZett/dockerfiles.svg?branch=master)](https://travis-ci.com/FelixZett/dockerfiles)
 # Dockerfiles
+[![Build Status](https://travis-ci.com/FelixZett/dockerfiles.svg?branch=master)](https://travis-ci.com/FelixZett/dockerfiles)
+
 This repository contains my public dockerfiles and scripts to automatically build them. The images are generally structured to be built daily so the latest ones are always up-to-date.
 
 # Hugo
