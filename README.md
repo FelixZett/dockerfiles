@@ -19,12 +19,12 @@ build:
   - hugo
 ```
 
-## Hugo
-![Docker Pulls](https://img.shields.io/docker/pulls/felixzett/hugo)
+## Hugo ![Docker Pulls](https://img.shields.io/docker/pulls/felixzett/hugo)
+`docker pull felixzett/hugo`
 
 Hugo standard version including git and npm
 
-## Hugo Extended
-![Docker Pulls](https://img.shields.io/docker/pulls/felixzett/hugo-extended)
+## Hugo Extended ![Docker Pulls](https://img.shields.io/docker/pulls/felixzett/hugo-extended)
+`docker pull felixzett/hugo-extended`
 
 Hugo extended version including git and npm
