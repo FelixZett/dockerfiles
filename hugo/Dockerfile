@@ -5,7 +5,8 @@ ARG VERSION
 RUN apk add --no-cache \
     curl \
     git \
-    npm
+    npm \
+    yarn
 
 RUN mkdir -p /usr/local/src \
     && cd /usr/local/src \

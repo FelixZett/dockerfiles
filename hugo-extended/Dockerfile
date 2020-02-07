@@ -6,7 +6,8 @@ RUN apk add --no-cache \
     libc6-compat \
     curl \
     git \
-    npm
+    npm \
+    yarn
 
 RUN mkdir -p /usr/local/src \
     && cd /usr/local/src \
