@@ -6,12 +6,7 @@ VERSION=${VERSION:1}
 echo "INFO: Latest version is $VERSION"
 echo "INFO: Building image..."
 docker build --build-arg VERSION=$VERSION -t felixzett/hugo:$VERSION .
-
 docker push felixzett/hugo:$VERSION
-
 docker tag felixzett/hugo:$VERSION felixzett/hugo:latest
-
 docker push felixzett/hugo:latest
-
 echo "INFO: felixzett/hugo DONE"
-
