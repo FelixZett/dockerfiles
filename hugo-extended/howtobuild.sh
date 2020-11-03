@@ -5,8 +5,8 @@ VERSION=$(curl --silent "https://api.github.com/repos/gohugoio/hugo/releases/lat
 VERSION=${VERSION:1}
 echo "INFO: Latest version is $VERSION"
 echo "INFO: Building image..."
-docker build --build-arg VERSION=$VERSION -t felixzett/hugo-extended:$VERSION .
-docker push felixzett/hugo-extended:$VERSION
-docker tag felixzett/hugo-extended:$VERSION felixzett/hugo-extended:latest
+docker build --build-arg VERSION="$VERSION" -t felixzett/hugo-extended:"$VERSION" . &&
+docker push felixzett/hugo-extended:"$VERSION" &&
+docker tag felixzett/hugo-extended:"$VERSION" felixzett/hugo-extended:latest &&
 docker push felixzett/hugo-extended:latest
 echo "INFO: felixzett/hugo-extended DONE"
